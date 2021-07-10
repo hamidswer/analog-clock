@@ -1,0 +1,148 @@
+/* ===================================================================== */
+/* ===============================Font/Text============================= */
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../Fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+/* ===================================================================== */
+/* ===============================Background============================ */
+
+.first-background {
+  background: #ffffff;
+}
+
+/* ===================================================================== */
+/* ===============================Grid================================== */
+
+/* ===================================================================== */
+/* =============================content================================= */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10rem 30rem 10rem;
+  overflow: hidden;
+}
+
+/* ===================================================================== */
+/* =============================row-1=================================== */
+.row-1 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  position: relative;
+}
+
+.mode {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-family: "Poppins-Medium";
+  font-size: 2rem;
+  color: #ffffff;
+  background: #000;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.active {
+  background: #000 !important;
+  color: #ffffff !important;
+}
+
+.active-mode {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.row-2 {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  position: relative;
+}
+
+.clock {
+  position: relative;
+  height: 11rem;
+  margin: 2rem 0rem;
+}
+
+.hour,
+.minute,
+.second {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  width: 0.25rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  border-color: transparent;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+}
+
+.hour {
+  top: 5rem;
+  height: 6rem;
+  background: rgb(0, 0, 0);
+}
+
+.minute {
+  top: 2rem;
+  height: 9rem;
+  background: #000;
+}
+
+.second {
+  top: 1rem;
+  height: 10rem;
+  background: rgb(255, 0, 0);
+}
+
+.center {
+  display: inline-block;
+  position: absolute;
+  top: 11rem;
+  left: 50%;
+  height: 0.25rem;
+  width: 0.25rem;
+  border: 0.25rem solid rgb(255, 0, 0);
+  background: #ffffff;
+  border-radius: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg) translate(-25%, -25%);
+}
+
+.row-3 {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  position: relative;
+  margin: 3rem 0rem 0rem 0rem;
+}
+
+.digital-clock {
+  font-family: "Poppins-Medium";
+  font-size: 3rem;
+  color: #000000;
+  text-align: center;
+  margin: 0rem;
+}
+
+.calendar {
+  font-family: "Poppins-Medium";
+  font-size: 2rem;
+  color: #313131;
+  text-align: center;
+  margin: 0rem;
+
+}
+
+/* ===================================================================== */
+/* =============================row-2=================================== */
